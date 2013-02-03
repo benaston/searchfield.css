@@ -268,11 +268,13 @@ top: 0;
 left: 0;
 bottom: 0;
 overflow-y: scroll;
+width: 734px;
 }
 
 .result-details {
 position: absolute;
 left: 704px;
+min-width: 458px;
 top: 0;
 bottom: 0;
 padding:10px 40px 40px 40px;
