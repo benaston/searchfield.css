@@ -249,6 +249,13 @@ bottom:20px;
 position:fixed;
 }
 
+.hovering-text {
+background-color: rgba(255,255,255,.9);
+box-shadow: 0 24px 69px rgba(0,0,0,0.5);
+padding:3px;
+border-radius: 5px;
+}
+
 .legal {
 bottom:10px;
 position:fixed;
@@ -273,7 +280,7 @@ width: 734px;
 
 .result-details {
 position: absolute;
-left: 704px;
+left: 734px;
 min-width: 458px;
 top: 0;
 bottom: 0;
