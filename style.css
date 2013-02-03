@@ -43,6 +43,13 @@ font-weight:normal;
 font-style: normal;
 }
 
+@font-face {
+font-family: 'socialico';
+src:local('?'),url('./socialico.otf');
+font-weight:normal;
+font-style: normal;
+}
+
 .important-text {
     background-color: #CF1D00;
     padding: 6px !important;
@@ -238,9 +245,14 @@ position:relative;
 }
 
 .navbar {
-left:50px;
+bottom:20px;
+position:fixed;
+}
+
+.legal {
 bottom:10px;
 position:fixed;
+font-size:.85em;
 }
 
 
@@ -263,8 +275,14 @@ position: absolute;
 left: 704px;
 top: 0;
 bottom: 0;
-padding:40px;
+padding:10px 40px 40px 40px;
 overflow-y: scroll;
+}
+
+.result-details section {
+clear:both;
+position:relative;
+top:20px;
 }
 
 .contact-methods {
