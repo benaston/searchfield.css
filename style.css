@@ -233,34 +233,24 @@ background-color: transparent;
 padding-bottom:10px;
 }
 
-.account-panel #p:checked ~ .profile-form {
-opacity:1;
-visibility: visible;
--webkit-transition: opacity .05s linear 0s, visibility 0s linear 0s;
-}
-
-.account-panel #s:checked ~ .social-form {
-opacity:1;
-visibility: visible;
--webkit-transition: opacity .05s linear 0s, visibility 0s linear 0s;
-}
-
+.account-panel #p:checked ~ .profile-form,
+.account-panel #e:checked ~ .email-form,
+.account-panel #s:checked ~ .social-form ,
 .account-panel #j:checked ~ .jobs-form {
 opacity:1;
 visibility: visible;
--webkit-transition: opacity .05s linear 0s, visibility 0s linear 0s;
+-webkit-transition: opacity .25s linear 0s, visibility 0s linear 0s;
 }
 
-.account-panel #e:checked ~ .email-form {
-opacity:1;
-visibility: visible;
--webkit-transition: opacity .05s linear 0s, visibility 0s linear 0s;
-}
-
-.profile-form, .jobs-form, .social-form , .email-form  {
+.profile-form, 
+.jobs-form, 
+.social-form , 
+.email-form  {
 opacity:0;
 visibility:hidden;
 position:absolute;
+margin: 20px auto 20px auto;
+width: 562px;
 }
 
 .app-wrapper {
@@ -337,6 +327,7 @@ height:60px !important;
 margin:auto;
 position:relative;
 width: 562px;
+text-align:center;
 }
 
 .account-panel h1 {
@@ -349,11 +340,6 @@ text-align:center;
 }
 .account-panel .menu label{
 display: inline-block;
-}
-
-.profile-form {
-margin: 20px auto 20px auto;
-width: 562px;
 }
 
 input[type="radio"]{
@@ -375,6 +361,7 @@ width: 100px;
 line-height:100px;
 border-radius: 100px;
 font-size:1.2em;
+display:inline-block;
 }
 
 label {
@@ -386,7 +373,6 @@ line-height:40px;
 border: 2px solid #EEEEEE;
 -webkit-user-select: none;
 text-align:center;
-display:block;
 }
 
 .gray {
