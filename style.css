@@ -249,8 +249,10 @@ position:relative;
 }
 
 .navbar {
-bottom:20px;
+left: 30px;
+bottom:30px;
 position:fixed;
+z-index: 4;
 }
 
 .hovering-text {
@@ -261,9 +263,11 @@ border-radius: 5px;
 }
 
 .legal {
-bottom:10px;
+left: 30px;
+bottom:20px;
 position:fixed;
 font-size:.85em;
+z-index: 4;
 }
 
 input[type='text'] {
@@ -305,13 +309,13 @@ top: 0;
 left: 435px;
 bottom: 0;
 overflow-y: scroll;
-width: 318px;
+width: 325px;
 z-index: 2;
 }
 
 .result-details {
 position: absolute;
-left: 736px;
+left: 743px;
 min-width: 378px;
 top: 0;
 bottom: 0;
