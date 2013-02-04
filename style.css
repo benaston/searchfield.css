@@ -235,6 +235,10 @@ padding-bottom:10px;
 
 .app-wrapper {
 height:100%;
+position: absolute;
+top:0;
+bottom 0;
+width: 100%;
 }
 
 .field  {
@@ -289,6 +293,24 @@ width: 435px;
 z-index: 2;
 }
 
+.account-panel {
+position:relative;
+top:30px;
+}
+
+.account-panel h1 {
+text-align:center;
+}
+
+.account-panel .menu  table{
+margin:auto;
+}
+
+.profile-form {
+margin: 20px auto 20px auto;
+width: 562px;
+}
+
 input[type="radio"]{
 position:absolute;
 visibility:hidden;
@@ -302,6 +324,14 @@ input[type="radio"]:active + label {
 box-shadow:inset 0 2px 4px rgba(0,0,0,0.15);
 }
 
+.account-panel label{
+height: 100px;
+width: 100px;
+line-height:100px;
+border-radius: 100px;
+font-size:1.2em;
+}
+
 label {
 margin:0;
 height: 40px;
@@ -310,6 +340,7 @@ border-radius: 40px;
 line-height:40px;
 border: 2px solid #EEEEEE;
 -webkit-user-select: none;
+text-align:center;
 }
 
 .gray {
@@ -451,24 +482,39 @@ border-color: rgba(0,200,0,0.85) rgba(0,200,0,0.85) rgba(0,200,0,0.85) !importan
     }
 }
 
-.three-d-context {
-	position: relative;
+.three-d-context {	
 	-webkit-perspective: 4000;
 }
 
+.front, .back {position: absolute; width: 100%; height:100%;}
 .front {
-	z-index: 900;
-	-webkit-transition: opacity 0s linear 0s, z-index 0s linear 0s, -webkit-transform 0s ease-in-out;
-	-webkit-transform: rotateY(0deg);
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
+z-index: 900;
+-webkit-transition: opacity 0s linear 0s, z-index 0s linear 0s, -webkit-transform .35s ease-out;
+-webkit-transform: rotateY(0deg);
+opacity: 1;
+-webkit-backface-visibility: hidden;
 }
 
-.three-d-context .flipped .front {
-	-webkit-transition: opacity .25s linear 0s, z-index 0s linear .25s, -webkit-transform .35s ease-in-out;
-	-webkit-transform: rotateY(180deg);
-	opacity: 0;
-	-webkit-backface-visibility: hidden;
+.back {
+z-index: 800;
+-webkit-transition: z-index 0s linear .25s, -webkit-transform .35s ease-out;
+-webkit-transform: rotateY(180deg);
+-webkit-backface-visibility: hidden;
+}
+
+.three-d-context.flipped .front {
+z-index: 800;
+-webkit-transition: opacity .25s linear 0s, z-index 0s linear .25s, -webkit-transform .35s ease-out;
+-webkit-transform: rotateY(-180deg);
+opacity: 0;
+-webkit-backface-visibility: hidden;
+}
+
+.three-d-context.flipped .back {
+z-index: 900;
+-webkit-transition: opacity .25s linear 0s, z-index 0s linear .25s, -webkit-transform .35s ease-out;
+-webkit-transform: rotateY(0deg);	
+-webkit-backface-visibility: hidden;
 }
 
 .grabbable {
