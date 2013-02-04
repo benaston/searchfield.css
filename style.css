@@ -285,6 +285,19 @@ width: 435px;
 z-index: 2;
 }
 
+input[type="radio"] {
+width:30px;
+height:30px;
+}
+
+.gray {
+color:#555;
+}
+
+.search-filters table {
+width:100%;
+}
+
 .results {
 position: absolute;
 top: 0;
