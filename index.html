@@ -235,40 +235,27 @@
 		<div class="back">	
 			<div class="account-panel">
 				<h1>My Account</h1>
-				<header>
-					<div class="menu">
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<input id="f" name="m" type="radio" checked="checked">
-										<label for="f">
-											Profile							
-										</label>								
-									</td>
-									<td>
-										<input id="m" name="m" type="radio">
-										<label for="m">
-											Social
-										</label>							
-									</td>		
-									<td>
-										<input id="m" name="m" type="radio">
-										<label for="m">
-											Jobs
-										</label>							
-									</td>
-									<td>
-										<input id="m" name="m" type="radio">
-										<label for="m">
-											Email
-										</label>							
-									</td>
-								</tr>					
-							</tbody>
-						</table>
-					</div>	
-				</header>
+				<div class="menu">							
+					<label for="p">
+						Profile							
+					</label>													
+					<label for="s">
+						Social
+					</label>							
+					<label for="j">
+						Jobs
+					</label>
+					<label for="e">
+						Email
+					</label>
+					<input id="p" name="m" type="radio" checked="checked">
+					<input id="s" name="m" type="radio">
+					<input id="j" name="m" type="radio">
+					<input id="e" name="m" type="radio">
+				</div>	
+				
+				<div class="account-form-wrapper">
+				
 				<div class="profile-form">
 					<input id="foo" name="foo" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Name..." tabindex="1" autocorrect="off" autocapitalize="none" type="text">
 					<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Title..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">
@@ -298,7 +285,10 @@
 					<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Blog..." tabindex="2" autocorrect="off" autocapitalize="none" type="checkbox">										
 					<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Personal website..." tabindex="2" autocorrect="off" autocapitalize="none" type="checkbox">										
 					<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">					
-				</div>				
+				</div>
+				
+				</div>
+								
 			</div>
 			<div class="navbar hovering-text">
 				<a href="#">Home</a> | <a href="#">Log Out</a>

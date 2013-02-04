@@ -233,12 +233,43 @@ background-color: transparent;
 padding-bottom:10px;
 }
 
+.account-panel #p:checked ~ .profile-form {
+opacity:1;
+visibility: visible;
+-webkit-transition: opacity .05s linear 0s, visibility 0s linear 0s;
+}
+
+.account-panel #s:checked ~ .social-form {
+opacity:1;
+visibility: visible;
+-webkit-transition: opacity .05s linear 0s, visibility 0s linear 0s;
+}
+
+.account-panel #j:checked ~ .jobs-form {
+opacity:1;
+visibility: visible;
+-webkit-transition: opacity .05s linear 0s, visibility 0s linear 0s;
+}
+
+.account-panel #e:checked ~ .email-form {
+opacity:1;
+visibility: visible;
+-webkit-transition: opacity .05s linear 0s, visibility 0s linear 0s;
+}
+
+.profile-form, .jobs-form, .social-form , .email-form  {
+opacity:0;
+visibility:hidden;
+position:absolute;
+}
+
 .app-wrapper {
 height:100%;
 position: absolute;
 top:0;
 bottom 0;
 width: 100%;
+overflow:hidden;
 }
 
 .field  {
@@ -298,12 +329,26 @@ position:relative;
 top:30px;
 }
 
+textarea.field {
+height:60px !important;
+}
+
+.account-form-wrapper {
+margin:auto;
+position:relative;
+width: 562px;
+}
+
 .account-panel h1 {
 text-align:center;
 }
 
-.account-panel .menu  table{
+.account-panel .menu{
 margin:auto;
+text-align:center;
+}
+.account-panel .menu label{
+display: inline-block;
 }
 
 .profile-form {
@@ -341,6 +386,7 @@ line-height:40px;
 border: 2px solid #EEEEEE;
 -webkit-user-select: none;
 text-align:center;
+display:block;
 }
 
 .gray {
