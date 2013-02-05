@@ -7,6 +7,9 @@ top: 26px;
 position: relative;
 }
 
+.cv-form input[type='button'] {margin-bottom:20px;}
+.availability {margin-bottom:10px;}
+
 body {	
 font-size: 1.1em;
 font-family: 'museo-sans-500';
@@ -234,17 +237,15 @@ padding-bottom:10px;
 }
 
 .account-panel #p:checked ~ .profile-form,
-.account-panel #e:checked ~ .email-form,
-.account-panel #s:checked ~ .social-form ,
-.account-panel #j:checked ~ .jobs-form {
+.account-panel #c:checked ~ .cv-form ,
+.account-panel #e:checked ~ .email-form{
 opacity:1;
 visibility: visible;
 -webkit-transition: opacity .25s linear 0s, visibility 0s linear 0s;
 }
 
 .profile-form, 
-.jobs-form, 
-.social-form , 
+.cv-form, 
 .email-form  {
 opacity:0;
 visibility:hidden;
@@ -315,8 +316,12 @@ z-index: 2;
 }
 
 .account-panel {
-position:relative;
-top:30px;
+position: absolute;
+overflow-y: scroll;
+padding-top: 30px;
+width: 100%;
+top: 0;
+bottom: 0;
 }
 
 textarea.field {
@@ -347,6 +352,7 @@ position:absolute;
 visibility:hidden;
 }
 
+
 input[type="radio"]:checked + label {
 border: 2px solid black;
 }
@@ -362,6 +368,17 @@ line-height:100px;
 border-radius: 100px;
 font-size:1.2em;
 display:inline-block;
+}
+
+.cv-form {text-align:left;}
+.cv-form label{
+height: 50px;
+width: 50px;
+line-height:50px;
+border-radius: 50px;
+font-size:1em;
+display:inline-block;
+
 }
 
 label {
