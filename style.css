@@ -99,7 +99,7 @@ font-size: 24.5px;
 html {
 font-size: 100%; /*bootstrap*/
 }
-.cv-form input[type='button'] {margin-bottom:20px;}
+.cv-form input, , .job-form input[type='button'] {margin-bottom:20px;}
 .availability {margin-bottom:10px;}
 
 body {	
@@ -336,9 +336,14 @@ background-color: transparent;
 padding-bottom:10px;
 }
 
+.availability{
+text-align:left;
+}
+
 .account-panel #p:checked ~ .profile-form,
 .account-panel #c:checked ~ .cv-form ,
-.account-panel #e:checked ~ .email-form{
+.account-panel #e:checked ~ .email-form,
+.account-panel #j:checked ~ .jobs-form{
 opacity:1;
 visibility: visible;
 -webkit-transition: opacity .25s linear 0s, visibility 0s linear 0s;
@@ -346,7 +351,8 @@ visibility: visible;
 
 .profile-form, 
 .cv-form, 
-.email-form  {
+.email-form ,
+.jobs-form {
 opacity:0;
 visibility:hidden;
 position:absolute;
@@ -514,7 +520,6 @@ display: inline-block;
 input[type="radio"]{
 position:absolute;
 visibility:hidden;
-z-index:0;
 }
 
 .summary, .skills, .tools {
@@ -546,7 +551,7 @@ color:#7a7a8a;
 
 .account-panel input[type="radio"]:checked + label {
 border: 2px solid #EEEEEE;
-z-index:1;
+
 }
 
 .back .heading {
@@ -592,7 +597,6 @@ color:#7a7a8a;
 
 input[type="radio"]:checked + label {
 border: 2px solid black;
-z-index:2;
 }
 .divider {
 background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1b1b24), color-stop(10%, #2f2f3e), color-stop(90%, #2f2f3e), color-stop(100%, #1b1b24));
@@ -628,8 +632,8 @@ margin:10px;
 color: #7a7a8a;
 }
 
-.cv-form {text-align:left;}
-.cv-form label{
+.cv-form, .job-form {text-align:left;}
+.cv-form label, .job-form label{
 height: 50px;
 width: 50px;
 line-height:50px;
@@ -648,7 +652,6 @@ line-height:40px;
 border: 2px solid #EEEEEE;
 -webkit-user-select: none;
 text-align:center;
-z-index:2;
 }
 
 .gray {

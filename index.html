@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<!-- Copyright Ben Aston 2013. All rights reserved. -->
-	<!--<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">	-->
+	<!--<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
 	<link href="./style.css" rel="stylesheet">		
 	<noscript>
 		<style>
@@ -243,6 +243,10 @@
 					<label for="e">
 						Email
 					</label>
+					<input id="j" name="m" type="radio">
+					<label for="j">
+						Jobs
+					</label>
 					<div class="profile-form">						
 						<ul class="linked-accounts">
 						<li>
@@ -345,6 +349,79 @@ system deployment, including latency impact analysis</div>
 						<input id="foo" name="foo" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Email address..." tabindex="1" autocorrect="off" autocapitalize="none" type="text">						
 						<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">					
 					</div>				
+					<div class="jobs-form">
+						<div class="availability">
+							<span class="one-pt-two">Published? </span>
+							<input id="y" name="a" type="radio" checked="checked">
+							<label for="y">
+								Yes						
+							</label>
+							<input id="n" name="a" type="radio">
+							<label for="n">
+								No
+							</label>							
+						</div>
+						<div class="contact-details">
+							<input id="foo" name="foo" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Job Advert Title..." tabindex="1" autocorrect="off" autocapitalize="none" type="text">						
+							<input id="foo" name="foo" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Telephone..." tabindex="1" autocorrect="off" autocapitalize="none" type="text">						
+							<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Upper rate (GBP/day)..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">										
+							<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Lower rate (GBP/day)..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">										
+							<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Company website..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">																
+							<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">					
+						</div>
+						<div class="summary">
+							<textarea class="field input-xxlarge" rows="10" placeholder="One line summary..."></textarea>
+							<div class="meta-info">Foo bar.</div>
+							<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">											
+						</div>
+						<div class="skills">
+							<textarea class="field input-xxlarge" rows="10" placeholder="Key skills..."></textarea>
+							<div class="meta-info">Jot down a comma separated list of your key skills.</div>							
+							<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">					
+						</div>
+						<div class="tools">
+							<textarea class="field input-xxlarge" rows="10" placeholder="Tools..."></textarea>							
+							<div class="meta-info">Jot down a comma separated list of tools that you are familiar with.</div>
+							<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">												
+						</div>
+						<div class="experience">
+							<div class="heading"><h3>Experience</h3></div>						
+							<div class="experience-item">								
+								<div class="job-title">Senior Developer (C#, JavaScript, ASP.NET MVC), ICIS</div>
+								<div class="dates">3 extensions</div>
+								<div class="dates">03/2012- 02/2013</div>
+								<div class="details">Global commodities pricing system. Pair programming in multidisciplinary team. Client-side MV*, document data 
+store (MarkLogic). Pull-based development (Kanban). Improved system performance by ?ve times. Ran project 
+inception, knowledge acquisition workshops, retrospectives. Performed business analysis, formed initial product 
+backlog. Coordinated development team (3 developers). Delivered weekly demonstrations, releases, ad-hoc 
+estimation sessions and status brie?ngs including burn-up charts and risk log highlights. Worked with offshore team 
+to de?ne and coordinate release process, testing and story lifecycle. Developed RESTful inter-system connector 
+following service-oriented architectural principles. Delivered architectural options for geographically distributed  
+system deployment, including latency impact analysis</div>
+							</div>
+							<a href="" style="float:right; margin-top:10px">add experience</a>
+							<div class="add-experience-form" style="display:none;">
+								<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Top 2 skills..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">										
+								<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Company name..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">										
+								<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="From..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">										
+								<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="To..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">										
+								<textarea class="field input-xxlarge" rows="10" placeholder="Details..."></textarea>
+								<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">					
+							</div>
+						</div>
+						<div class="heading"><h3>Education</h3></div>						
+						<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="School Name..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">										
+						<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">					
+						<div class="heading"><h3 style="clear:both;">Open Source</h3></div>
+						<input id="foo2" name="foo2" class="field input-xxlarge" pattern="[0-9]{13,16}" required="required" placeholder="Link 1..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">										
+						<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">		
+						<div class="heading"><h3 style="clear:both;">Interested In</h3></div>
+						<textarea class="field input-xxlarge" rows="10" placeholder="Interests..."></textarea>
+						<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">					
+						<div class="heading"><h3 style="clear:both;">Favourite Books</h3></div>
+						<textarea class="field input-xxlarge" rows="10" placeholder="Interests..."></textarea>
+						<input type="button" class="btn-show-dialog circular-btn" data-action="success" alt="Save" title="Save" value="3">					
+					</div>
 				</div>
 			</div>
 			<div class="navbar hovering-text">
