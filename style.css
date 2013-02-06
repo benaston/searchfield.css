@@ -592,7 +592,7 @@ color:#7a7a8a;
 
 input[type="radio"]:checked + label {
 border: 2px solid black;
-z-index:1;
+z-index:2;
 }
 .divider {
 background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1b1b24), color-stop(10%, #2f2f3e), color-stop(90%, #2f2f3e), color-stop(100%, #1b1b24));
