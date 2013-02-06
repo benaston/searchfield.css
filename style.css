@@ -514,6 +514,7 @@ display: inline-block;
 input[type="radio"]{
 position:absolute;
 visibility:hidden;
+z-index:0;
 }
 
 .summary, .skills, .tools {
@@ -545,7 +546,7 @@ color:#7a7a8a;
 
 .account-panel input[type="radio"]:checked + label {
 border: 2px solid #EEEEEE;
-
+z-index:1;
 }
 
 .back .heading {
