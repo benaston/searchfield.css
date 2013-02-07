@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
 	
 	$('.back-to-top').bind('click', function(){$('.result-details').scrollTop(0); return false;});
 	
-	document.ontouchmove = function(event){
+	$('body').bind('ontouchmove', function(event){
     event.preventDefault();
-	}
+	});
 }); 
