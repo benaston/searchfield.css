@@ -1,3 +1,5 @@
+@media screen {
+
 .search-field {
 width:325px;
 }
@@ -115,7 +117,7 @@ background-position: 0 0;
 background-attachment: fixed;
 }
 
-input[type='button'][title='Search'] {
+#btn-search {
 position: absolute;
 left: 280px;
 }
@@ -460,8 +462,8 @@ position: absolute;
 top: 0;
 left: 0;
 bottom: 0;
-overflow: hidden;
-width: 435px;
+overflow:visible;
+width: 300px; /*iphone screen width == 320*/
 z-index: 2;
 }
 
@@ -920,4 +922,56 @@ background: -webkit-linear-gradient(#F4F4F4,#ECECEC) repeat scroll 0 0 transpare
 50% {
     -webkit-transform: rotate(1deg);
 }
+}
+
+.my-favourites {
+width:300px;
+}
+
+#btn-edit-favourites {
+	position:absolute;
+	top: 99px;
+left: 250px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+#btn-search {
+	left:100px;
+	top:250px;
+} 
+#btn-edit-favourites {
+top: 245px;
+left: 67px;
+}
+.results{
+left:300px;
+}
+.navbar , .legal {
+display:none;
+}
+
+.result-details {width:320px;}
+
+result-details input[type='button'] {
+min-width: 60px;
+border-radius: 60px !important;
+line-height: 60px !important;
+height: 60px !important;
+}
+
+.result {
+-webkit-transition: none;
+box-shadow: none !important;
+}
+
+.result:active {
+-webkit-transition: none;
+box-shadow: none !important;
+}
+
+
+.result:hover{
+-webkit-transition: none;
+box-shadow: none !important;
 }

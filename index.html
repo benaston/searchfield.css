@@ -19,7 +19,7 @@
 				<div class="search-field">
 					<input id="foo" name="foo" class="field" pattern="[0-9]{13,16}" required="required" placeholder="Skills..." tabindex="1" autocorrect="off" autocapitalize="none" type="text">
 					<input id="foo2" name="foo2" class="field" pattern="[0-9]{13,16}" required="required" placeholder="Location..." tabindex="2" autocorrect="off" autocapitalize="none" type="text">
-					<input type="button" class="btn-show-dialog circular-btn" alt="Search" title="Search" value="s">			
+					<input type="button" id="btn-search" class="btn-show-dialog circular-btn" alt="Search" title="Search" value="s">			
 				</div>
 				<div class="search-filters">
 					<span class="gray">Minimum rate (GBP)</span>
@@ -61,7 +61,7 @@
 				</div>
 				<div class="my-favourites">
 					<h2>my favourites</h2>	
-					<input type="button" class="btn-show-dialog circular-btn" alt="Edit" title="Edit" value="y">
+					<input type="button" id="btn-edit-favourites" class="btn-show-dialog circular-btn" alt="Edit" title="Edit" value="y">
 					<div class="favourites">
 						<div class="hover">
 							<div class="result sheen" style="background-image: url(http://images2.wikia.nocookie.net/__cb20110812045951/thundercats/images/f/f9/Tygra_at_Lion-o%27s_sword_ceremony.jpg); background-position:0 0 !important;">	
@@ -88,7 +88,7 @@
 			<a href="#">my account</a> | <a href="#">log out</a>
 		</div>
 		<div class="legal hovering-text">
-			Wizerati. Copyright &copy; Ben Aston 2013
+			Wizerati. &copy; Ben Aston 2013
 		</div>
 		<div class="results">
 			<div class="hover">
@@ -137,9 +137,9 @@
 				</div>			
 			</div>		
 		</div>
-		<article class="result-details top">
+		<article class="result-details">
 			<header>
-				<div class="menu">
+				<div class="menu" name="top" style="position:relative;">
 					<input type="button" class="btn-show-dialog circular-btn" alt="Email" title="Email" value="M">
 					<input type="button" class="btn-show-dialog circular-btn" alt="Github" title="Github" style="font-family:'socialico';" value="G">
 					<input type="button" class="btn-show-dialog circular-btn" alt="Twitter" title="Twitter" style="font-family:'socialico';" value="L">
@@ -221,7 +221,7 @@
 					<section>
 						<article>
 							<hr>
-							<a href="#top" class="back-to-top">Back to top</a>
+							<a href="#" class="back-to-top">Back to top</a>
 						</article>
 					</section>
 				</section>
@@ -428,7 +428,7 @@ system deployment, including latency impact analysis</div>
 				<a href="#">back to search</a> | <a href="#">log out</a>
 			</div>
 			<div class="legal hovering-text">
-				Wizerati. Copyright &copy; Ben Aston 2013
+				Wizerati. &copy; Ben Aston 2013
 			</div>
 		</div>
 	</div>
