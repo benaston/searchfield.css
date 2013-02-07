@@ -975,3 +975,7 @@ box-shadow: none !important;
 -webkit-transition: none;
 box-shadow: none !important;
 }
+input[type="radio"]:active + label {
+box-shadow:none;
+}
+}
