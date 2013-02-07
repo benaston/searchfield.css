@@ -954,11 +954,12 @@ left:300px;
 display:none;
 }
 
-result-details input[type='button'] {
+.result-details .circular-btn {
 min-width: 60px;
 border-radius: 60px !important;
 line-height: 60px !important;
 height: 60px !important;
+width: 60px !important;
 }
 
 .result {
@@ -1004,5 +1005,6 @@ border: 2px solid black;
 left:625px;
 padding: 10px;
 width:300px;
+min-width: 300px;
 }
 }
