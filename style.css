@@ -954,8 +954,6 @@ left:300px;
 display:none;
 }
 
-.result-details {width:320px;}
-
 result-details input[type='button'] {
 min-width: 60px;
 border-radius: 60px !important;
@@ -1001,5 +999,10 @@ font-size:1.5em;
 .hover{
 box-shadow:none;
 border: 2px solid black;
+}
+.result-details{
+left:625px;
+padding: 10px;
+width:300px;
 }
 }
