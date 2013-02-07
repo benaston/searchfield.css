@@ -960,11 +960,11 @@ overflow-y: scroll;
 }
 
 .search-form {
-width:280px;
+width:260px;
 }
-.my-favourites {width:280px;}
+.my-favourites {width:260px;}
 
-.search-field{ width:280px; }
+.search-field{ width:260px; }
 
 .result-details .circular-btn {
 min-width: 60px;
