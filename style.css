@@ -954,6 +954,10 @@ left:300px;
 display:none;
 }
 
+.search-panel {
+overflow: scroll;
+}
+
 .result-details .circular-btn {
 min-width: 60px;
 border-radius: 60px !important;
