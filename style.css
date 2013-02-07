@@ -978,4 +978,13 @@ box-shadow: none !important;
 input[type="radio"]:active + label {
 box-shadow:none;
 }
+.app-wrapper {
+
+overflow: visible;
+}
+
+.search-form {
+padding: 10px;
+}
+
 }
