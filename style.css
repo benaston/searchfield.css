@@ -944,7 +944,6 @@ top: 194px;
 left: 105px;
 top: 245px;
 }
-
 .my-favourites {
 top: 100px;
 }
@@ -995,5 +994,8 @@ top: 0;
 }
 .search-filters {
 top: 0;
+}
+.circular-btn {
+font-size:1.5em;
 }
 }
