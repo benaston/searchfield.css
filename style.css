@@ -937,12 +937,12 @@ left: 250px;
 
 @media only screen and (max-width: 480px) {
 #btn-search {
-left: 86px;
+left: 105px;
 top: 194px;
 } 
 #btn-edit-favourites {
+left: 105px;
 top: 245px;
-left: 86px;
 }
 
 .my-favourites {
