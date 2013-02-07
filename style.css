@@ -955,8 +955,16 @@ display:none;
 }
 
 .search-panel {
-overflow: scroll;
+overflow-x: scroll;
+overflow-y: scroll;
 }
+
+.search-form {
+width:280px;
+}
+.my-favourites {width:280px;}
+
+.search-field{ width:280px; }
 
 .result-details .circular-btn {
 min-width: 60px;
