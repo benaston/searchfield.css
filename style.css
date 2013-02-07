@@ -937,12 +937,16 @@ left: 250px;
 
 @media only screen and (max-width: 480px) {
 #btn-search {
-	left:100px;
-	top:250px;
+left: 86px;
+top: 194px;
 } 
 #btn-edit-favourites {
 top: 245px;
-left: 67px;
+left: 86px;
+}
+
+.my-favourites {
+top: 100px;
 }
 .results{
 left:300px;
@@ -986,5 +990,10 @@ overflow: visible;
 .search-form {
 padding: 10px;
 }
-
+.search-field .field {
+top: 0;
+}
+.search-filters {
+top: 0;
+}
 }
