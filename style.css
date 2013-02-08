@@ -465,6 +465,7 @@ bottom: 0;
 overflow:visible;
 width: 300px; /*iphone screen width == 320*/
 z-index: 2;
+-webkit-overflow-scrolling: touch;
 }
 
 label {display:block;}
@@ -690,6 +691,7 @@ bottom: 0;
 padding:10px 40px 40px 40px;
 overflow-y: scroll;
 z-index: 1;
+-webkit-overflow-scrolling: touch;
 }
 
 .result-details section {
@@ -949,6 +951,7 @@ top: 100px;
 }
 .results{
 left:300px;
+-webkit-overflow-scrolling: touch;
 }
 .navbar , .legal {
 display:none;
@@ -957,7 +960,7 @@ display:none;
 .search-panel {
 overflow-x: hidden;
 overflow-y: scroll;
--webkit-overflow-scrolling: touch;
+
 padding:10px;
 }
 
