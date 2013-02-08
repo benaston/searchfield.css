@@ -328,7 +328,7 @@ cursor: pointer;
 border: 3px solid;
 border-color: rgba(0,109,204,0.95) rgba(0,109,204,0.95) rgba(0,109,204,0.95) !important;
 float: right;
-margin-right: 10px;
+margin-left: 10px;
 min-width: 80px;
 border-radius: 80px !important;
 line-height: 70px !important; /*important for positioning on PC*/
@@ -373,7 +373,8 @@ position: absolute;
 top:0;
 bottom 0;
 width: 100%;
-overflow:hidden;
+overflow-x: scroll;
+overflow-y: hidden;
 }
 
 .back textarea, .back input[type="text"], .back input[type="password"], .back input[type="datetime"], .back input[type="datetime-local"], .back input[type="date"], .back input[type="month"], .back input[type="time"], .back input[type="week"], .back input[type="number"], .back input[type="email"], .back input[type="url"], .back input[type="search"], .back input[type="tel"], .back input[type="color"], .back .uneditable-input {
@@ -413,7 +414,7 @@ height: 31px !important;
 .my-favourites {
 top:0;
 position:relative;
-height:450px;
+height: 330px;
 padding:30px;
 }
 
@@ -699,10 +700,10 @@ z-index: 2;
 .result-details {
 position: absolute;
 left: 743px;
-min-width: 378px;
+min-width: 300px;
 top: 0;
 bottom: 0;
-padding:10px 40px 40px 40px;
+padding:10px 20px 40px 40px;
 overflow-y: scroll;
 z-index: 1;
 -webkit-overflow-scrolling: touch;
