@@ -51,6 +51,7 @@ text-decoration: underline;
 .my-favourites .hover {
 margin-left: 3px;
 margin-right: 3px;
+float: left;
 }
 
 a {
