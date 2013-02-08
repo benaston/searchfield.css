@@ -682,7 +682,7 @@ overflow-y: scroll;
 width: 325px;
 z-index: 2;
 -webkit-overflow-scrolling: touch;
--webkit-user-select: none;
+/*-webkit-user-select: none;*/
 }
 
 
