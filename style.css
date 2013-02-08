@@ -945,8 +945,8 @@ top: 194px;
 } 
 #btn-edit-favourites {
 left: 82px;
-top: 245px;
-padding-bottom:10px;
+top: 212px;
+margin-bottom:10px;
 }
 .my-favourites {
 width:240px;
@@ -1029,4 +1029,6 @@ padding: 10px;
 width:300px;
 min-width: 300px;
 }
+
+.search-form input[type='text'] {width:215px;}
 }
