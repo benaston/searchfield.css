@@ -323,6 +323,7 @@ visibility: hidden;
 }
 
 .circular-btn {
+padding: 0 !important;
 cursor: pointer;
 -webkit-appearance: button;
 border: 3px solid;
