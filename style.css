@@ -681,6 +681,7 @@ overflow-y: scroll;
 width: 325px;
 z-index: 2;
 -webkit-overflow-scrolling: touch;
+-webkit-user-select: none;
 }
 
 .result-details {
@@ -954,18 +955,21 @@ top: 100px;
 }
 .results{
 left:289px;
-width: 254px !important;
+width: 250px !important;
 -webkit-overflow-scrolling: touch;
 }
 .navbar , .legal {
 display:none;
 }
-
+.menu {
+-webkit-user-select: none;
+}
 .search-panel {
 overflow-x: hidden;
 overflow-y: scroll;
-width: 254px;
+width: 250px;
 padding:10px;
+-webkit-user-select: none;
 }
 
 .search-form {
