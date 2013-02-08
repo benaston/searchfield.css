@@ -940,14 +940,16 @@ left: 250px;
 
 @media only screen and (max-width: 480px) {
 #btn-search {
-left: 105px;
+left: 82px;
 top: 194px;
 } 
 #btn-edit-favourites {
-left: 105px;
+left: 82px;
 top: 245px;
+padding-bottom:10px;
 }
 .my-favourites {
+width:240px;
 top: 100px;
 }
 .results{
@@ -961,17 +963,17 @@ display:none;
 .search-panel {
 overflow-x: hidden;
 overflow-y: scroll;
-
+width:263px;
 padding:10px;
 }
 
 .search-form {
-width:260px;
+width: 240px;
 border:none;
+margin-right:0;
 }
-.my-favourites {width:260px;}
 
-.search-field{ width:260px; }
+.search-field{ width:240px; }
 
 .result-details .circular-btn {
 min-width: 60px;
@@ -1019,6 +1021,7 @@ font-size:1.5em;
 .hover{
 box-shadow:none;
 border: 2px solid black;
+margin: 2px !important;
 }
 .result-details{
 left:625px;
