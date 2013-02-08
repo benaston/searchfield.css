@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
 		$("body").addClass("mac");
 	}
 	
-	myScroll = new iScroll('wrapper');
+	
 	
 	$(".navbar a:nth-child(1)").bind('click', function(){
 		$('.three-d-context').addClass('flipped');
