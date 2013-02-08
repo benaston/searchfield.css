@@ -115,7 +115,6 @@ background-size: 2000px auto, auto auto;
 background-repeat: no-repeat, repeat;
 background-position: 0 0;
 background-attachment: fixed;
-position:fixed;
 }
 
 #btn-search {
@@ -958,6 +957,7 @@ display:none;
 .search-panel {
 overflow-x: hidden;
 overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
 padding:10px;
 }
 
