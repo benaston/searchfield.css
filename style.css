@@ -1,10 +1,11 @@
 @media screen {
 
-.search-field {
+.search-fields {
 width:325px;
+position: relative;
 }
 
-.search-field  .field{
+.search-fields  .field{
 top: 26px;
 position: relative;
 }
@@ -941,12 +942,12 @@ left: 250px;
 
 @media only screen and (max-width: 480px) {
 #btn-search {
-left: 82px;
-top: 194px;
+left: 77px;
+top: 187px;
 } 
 #btn-edit-favourites {
-left: 82px;
-top: 212px;
+left: 77px;
+top: 215px;
 margin-bottom:10px;
 }
 .my-favourites {
@@ -978,7 +979,7 @@ border:none;
 margin-right:0;
 }
 
-.search-field{ width:240px; }
+.search-fields{ width:240px; }
 
 .result-details .circular-btn {
 min-width: 60px;
@@ -1014,7 +1015,7 @@ overflow: visible;
 .search-form {
 padding: 0;
 }
-.search-field .field {
+.search-fields .field {
 top: 0;
 }
 .search-filters {
