@@ -48,6 +48,11 @@ color: #005580;
 text-decoration: underline;
 }
 
+.my-favourites .hover {
+margin-left: 3px;
+margin-right: 3px;
+}
+
 a {
 color: #08c;/*bootstrap*/
 text-decoration: none;/*bootstrap*/
