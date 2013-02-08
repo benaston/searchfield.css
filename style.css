@@ -963,9 +963,7 @@ left: 77px;
 top: 187px;
 } 
 #btn-edit-favourites {
-left: 77px;
-top: 215px;
-margin-bottom:10px;
+display:none;
 }
 .my-favourites {
 width:240px;
