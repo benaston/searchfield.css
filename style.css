@@ -963,8 +963,9 @@ padding: 0 30px;}
 }
 @media only screen and (max-width: 480px) {
 #btn-search {
-left: 89px;
+left: 86px;
 top: 199px;
+margin: 0;
 } 
 #btn-edit-favourites {
 display:none;
