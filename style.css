@@ -685,6 +685,11 @@ z-index: 2;
 -webkit-user-select: none;
 }
 
+
+.results .hover {
+-webkit-user-drag:element;
+}
+
 .result-details {
 position: absolute;
 left: 743px;
