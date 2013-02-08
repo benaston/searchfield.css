@@ -953,8 +953,8 @@ width:240px;
 top: 100px;
 }
 .results{
-left:300px;
-width:263px !important;
+left:289px;
+width: 254px !important;
 -webkit-overflow-scrolling: touch;
 }
 .navbar , .legal {
@@ -964,7 +964,7 @@ display:none;
 .search-panel {
 overflow-x: hidden;
 overflow-y: scroll;
-width:263px;
+width: 254px;
 padding:10px;
 }
 
@@ -1025,7 +1025,7 @@ border: 2px solid black;
 margin: 2px !important;
 }
 .result-details{
-left: 553px;
+left: 547px;
 padding: 10px;
 width:300px;
 min-width: 300px;
