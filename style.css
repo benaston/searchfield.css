@@ -121,6 +121,7 @@ background-attachment: fixed;
 #btn-search {
 position: absolute;
 left: 280px;
+top: 86px;
 }
 
 p {	
@@ -186,6 +187,11 @@ margin-left: auto;
 margin-right: auto;
 }
 
+.favourites {
+height: 100%;
+width:100%;
+}
+
 .favourites .hover{
 width:108px;
 height:65px;
@@ -195,10 +201,8 @@ display: inline-block;
 .search-form {
 padding:30px;
 margin-bottom:20px;
-margin-right:20px;
 width:370px;
 height:200px;
-float:left;
 display:block;
 border-right: 2px solid silver;
 border-radius: 0 0 455px 0;
@@ -407,8 +411,10 @@ height: 31px !important;
 }
 
 .my-favourites {
-top:150px;
+top:0;
 position:relative;
+height:450px;
+padding:30px;
 }
 
 .navbar {
@@ -945,9 +951,9 @@ width:300px;
 }
 
 #btn-edit-favourites {
-	position:absolute;
-	top: 99px;
-left: 250px;
+position:absolute;
+left: 280px;
+top: 86px;
 }
 }
 
