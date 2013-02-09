@@ -1120,6 +1120,13 @@ top: 86px;
 .my-favourites {
 padding: 0 30px;
 }
+.legal{
+display:none;
+}
+.navbar {
+left: 30px;
+bottom:20px;
+}
 
 }
 
