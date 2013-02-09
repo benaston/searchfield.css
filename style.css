@@ -395,7 +395,7 @@ text-align:left;
 }
 
 .mac .my-favourites #fav:checked ~ .favourites .result:before {
-line-height: 15px;
+line-height: 20px;
 }
 
 .account-panel #p:checked ~ .profile-form,
