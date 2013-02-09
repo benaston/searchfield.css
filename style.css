@@ -1009,7 +1009,7 @@ background: -webkit-linear-gradient(#F4F4F4,#ECECEC) repeat scroll 0 0 transpare
 box-shadow:none !important;
 }
 .favourite-placeholder  .result{
-border:2px solid rgba(0,0,0,.05); 
+border:2px solid rgba(0,0,0,.05) !important; 
 background-color:transparent;
 box-sizing: border-box;
 }
