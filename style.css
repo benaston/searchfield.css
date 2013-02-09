@@ -9,7 +9,6 @@ label {
 box-sizing: border-box; /*equalizes behavior for label and buttons*/
 }
 .search-fields  .field{
-top: 26px;
 position: relative;
 }
 
@@ -193,7 +192,6 @@ font-style: normal;
 .search-filters {
 display:inline-block;
 position:relative;
-top:25px;
 }
 
 .hover {
@@ -359,6 +357,13 @@ text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
 background-color: transparent;
 }
 
+tr:nth-child(2) label {
+position: relative;
+left: 20px;
+}
+Matched CSS Rules
+
+
 .back-to-top {
 padding-bottom:10px;
 }
@@ -368,7 +373,7 @@ text-align:left;
 }
 
 .my-favourites #fav:checked ~ .favourites .result:nth-child(odd) {
--webkit-animation: jiggle 0.2s infinite .1s;
+-webkit-animation: jiggle 0.2s infinite .05s;
 -moz-animation-name: jiggle;
 }
 .my-favourites #fav:checked ~ .favourites .result:nth-child(even) {
