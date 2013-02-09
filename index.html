@@ -10,7 +10,7 @@
 		<meta name="author" content="Ben Aston">
 		<meta name="Keywords" content="wizerati,hire,job,recruitment,contractor,it">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="viewport" content="initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 		<meta name="format-detection" content="telephone=no">
@@ -27,8 +27,14 @@
 				#no-script{display:block !important;}
 			</style>
 		</noscript>	
+		<script>
+		 function BlockMove(event) {
+		  // Tell Safari not to move the window.
+		  event.preventDefault() ;
+		 }
+		</script>
 	</head>
-	<body>
+	<body  ontouchmove="BlockMove(event);" >
 		<div class="app-wrapper three-d-context">
 			<div class="front">
 			<div class="search-panel wrapper">
@@ -75,7 +81,8 @@
 				</div>	
 				<div class="my-favourites">
 						<h2>my favourites</h2>						
-						<input type="button" id="btn-edit-favourites" class="btn-show-dialog circular-btn" alt="Edit" title="Edit" value="y">
+						<input type="checkbox" id="fav" />
+						<label id="btn-edit-favourites" for="fav" class="btn-show-dialog circular-btn" alt="Edit" title="Edit">y</label>						
 						<div class="favourites" ondrop="drop(event)" ondragover="allowDrop(event)">
 							<div class="hover" >
 								<div class="result sheen" style="background-image: url(http://images3.wikia.nocookie.net/__cb20110827140614/thundercats/images/e/ed/Cheetara_4311.JPG); background-position:0 0 !important;">	

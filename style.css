@@ -5,11 +5,17 @@ width:325px;
 position: relative;
 }
 
+label {
+box-sizing: border-box; /*equalizes behavior for label and buttons*/
+}
 .search-fields  .field{
 top: 26px;
 position: relative;
 }
 
+input[type='checkbox'] {
+display:none;
+}
 h1 {
 font-size: 38.5px;
 }
@@ -338,7 +344,7 @@ visibility: hidden;
 .circular-btn {
 padding: 0 !important;
 cursor: pointer;
--webkit-appearance: button;
+color: black;
 border: 3px solid;
 border-color: rgba(0,109,204,0.95) rgba(0,109,204,0.95) rgba(0,109,204,0.95) !important;
 float: right;
@@ -361,6 +367,17 @@ padding-bottom:10px;
 text-align:left;
 }
 
+.my-favourites #fav:checked ~ .favourites .result {
+
+    -webkit-animation: jiggle 0.2s infinite;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: jiggle;
+    -moz-animation-iteration-count: infinite;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+
+}
+
 .account-panel #p:checked ~ .profile-form,
 .account-panel #c:checked ~ .cv-form ,
 .account-panel #e:checked ~ .email-form,
@@ -369,6 +386,8 @@ opacity:1;
 visibility: visible;
 -webkit-transition: opacity .25s linear 0s, visibility 0s linear 0s;
 }
+
+
 
 .profile-form, 
 .cv-form, 
@@ -937,14 +956,7 @@ background: -webkit-linear-gradient(#F4F4F4,#ECECEC) repeat scroll 0 0 transpare
     }
 }
 
-.jiggly {
-    -webkit-animation: jiggle 0.2s infinite;
-    -moz-animation-duration: 0.2s;
-    -moz-animation-name: jiggle;
-    -moz-animation-iteration-count: infinite;
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-}
+
 
 @-moz-keyframes jiggle {
     0% {
