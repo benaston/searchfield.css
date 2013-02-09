@@ -394,6 +394,10 @@ text-align:left;
     text-align: center;
 }
 
+.mac .my-favourites #fav:checked ~ .favourites .result:before {
+line-height: 15px;
+}
+
 .account-panel #p:checked ~ .profile-form,
 .account-panel #c:checked ~ .cv-form ,
 .account-panel #e:checked ~ .email-form,
@@ -711,7 +715,7 @@ margin:0;
 height: 40px;
 width: 40px;
 border-radius: 40px;
-line-height:40px;
+line-height: 37px;
 border: 2px solid #EEEEEE;
 -webkit-user-select: none;
 text-align:center;
