@@ -22,9 +22,11 @@ line-height: 20px;
 color: inherit;
 text-rendering: optimizelegibility;
 }
+
 h1, h2, h3 {
 line-height: 40px;
 }
+
 hr {
 margin: 20px 0;
 border: 0;
@@ -81,9 +83,11 @@ font-size: 14px;
 font-weight: normal;
 line-height: 20px;
 }
+
 button, input {
 line-height: normal;
 }
+
 button, input, select, textarea {
 margin: 0;
 font-size: 100%;
@@ -93,6 +97,7 @@ vertical-align: middle;
 a:hover, a:active {
 outline: 0;/*bootstrap*/
 }
+
 h1 {
 font-size: 38.5px;
 }
@@ -108,6 +113,7 @@ font-size: 24.5px;
 html {
 font-size: 100%; /*bootstrap*/
 }
+
 .cv-form input, , .job-form input[type='button'] {margin-bottom:20px;}
 .availability {margin-bottom:10px;}
 
@@ -212,6 +218,7 @@ height:200px;
 display:block;
 border-right: 2px solid silver;
 border-radius: 0 0 455px 0;
+-webkit-user-select:none;
 }
 
 
@@ -423,6 +430,7 @@ top:0;
 position:relative;
 height: 330px;
 padding:30px;
+-webkit-user-select:none;
 }
 
 .navbar {
@@ -430,6 +438,7 @@ left: 30px;
 bottom: 50px;
 position:fixed;
 z-index: 4;
+-webkit-user-select:none;
 }
 
 .hovering-text {
@@ -461,6 +470,7 @@ bottom:20px;
 position:fixed;
 font-size:.85em;
 z-index: 4;
+-webkit-user-select:none;
 }
 
 input[type='text'] {
@@ -696,7 +706,7 @@ overflow-y: scroll;
 width: 325px;
 z-index: 2;
 -webkit-overflow-scrolling: touch;
-/*-webkit-user-select: none;*/
+-webkit-user-select: none;
 }
 
 
@@ -981,6 +991,7 @@ display:none;
 width:240px;
 top: 100px;
 padding:0;
+-webkit-user-select: none;
 }
 .results{
 left:289px;
@@ -1005,6 +1016,7 @@ padding:10px;
 width: 240px;
 border:none;
 margin-right:0;
+-webkit-user-select: none;
 }
 
 .search-fields{ width:240px; z-index:0; }
@@ -1042,6 +1054,7 @@ overflow: visible;
 
 .search-form {
 padding: 0;
+-webkit-user-select:none;
 }
 .search-fields .field {
 top: 0;
