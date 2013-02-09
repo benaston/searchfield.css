@@ -1115,6 +1115,8 @@ top: 86px;
 }
 }
 
+
+
 @media only screen and (max-height: 700px) {
 
 .my-favourites {
@@ -1126,6 +1128,14 @@ display:none;
 .navbar {
 left: 30px;
 bottom:20px;
+}
+
+}
+
+@media only screen and (max-height: 635px) {
+
+.navbar {
+bottom:5px;
 }
 
 }
@@ -1154,6 +1164,7 @@ left:289px;
 width: 250px !important;
 -webkit-overflow-scrolling: touch;
 }
+
 .navbar , .legal {
 display:none;
 }
