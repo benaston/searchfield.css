@@ -1005,10 +1005,60 @@ background: -webkit-linear-gradient(#F4F4F4,#ECECEC) repeat scroll 0 0 transpare
 }
 }
 
+.favourite-placeholder {
+box-shadow:none !important;
+}
+.favourite-placeholder  .result{
+border:2px solid rgba(0,0,0,.05); 
+background-color:transparent;
+box-sizing: border-box;
+}
+.favourite-placeholder  .result:active, .favourite-placeholder  .result:focus, .favourite-placeholder  .result:hover{
+box-shadow:none !important;
+}
 .my-favourites {
 width:300px;
 }
-
+.ignored {
+opacity:0.2;
+text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+color: black;
+}
+.ignored:after {
+content:'ignored';
+}
+.expired {
+opacity:0.2;
+text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+color: black;
+}
+.expired:after {
+content:'expired';
+}
+.visited {
+opacity: 0.5;
+text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+color: black;
+}
+.visited:after {
+content:'visited';
+}
+.updated {
+text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+color: black;
+}
+.updated::after {
+content: 'updated';
+background-color: green;
+width: 30px;
+height: 30px;
+border-radius: 5px 0 70px 0;
+position: relative;
+top: 0px;
+left: 0;
+display: block;
+line-height: 24px;
+}
 #btn-edit-favourites {
 position:absolute;
 left: 280px;
