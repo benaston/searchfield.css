@@ -1,5 +1,38 @@
 @media screen {
 
+.welcome-panel{
+padding:30px;
+}
+.welcome-panel #btn-it-contractor , #btn-employer{
+position: absolute;
+float:none !important;
+left: 63px;
+}
+
+.dn {
+display:none;
+}
+
+#btn-employer {
+left: 214px;
+}
+
+#btn-it-contractor:after, 
+#btn-employer:after {
+display: block;
+content: '';
+width: 4px;
+background-color: rgba(0,109,204,0.95);
+height: 12px;
+position: absolute;
+top: -14px;
+-webkit-transform: rotate(0);
+left: 33px;
+}
+
+#btn-employer:after {
+
+}
 .search-fields {
 width:325px;
 position: relative;
