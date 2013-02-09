@@ -1,9 +1,10 @@
 @media screen {
 
 .welcome-panel{
-margin:30px;
-width: 573px;
+margin: 30px;
+max-width: 573px;
 position: relative;
+min-width: 300px;
 }
 .welcome-panel #btn-it-contractor , #btn-employer{
 position: absolute;
