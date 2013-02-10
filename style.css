@@ -1248,10 +1248,6 @@ bottom:5px;
 
 @media only screen and (max-width: 480px) {
 
-}
-
-@media only screen and (max-width: 400px) {
-
 #btn-search {
 left: 86px;
 top: 231px;
@@ -1369,6 +1365,14 @@ min-width: 300px;
 width:215px;
 }
 
+.navbar {
+left:12px;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
 .an-employer {
 top: 120px;
 position: relative;
@@ -1385,10 +1389,6 @@ top: 35px !important;
 #btn-employer {
 left: 78px;
 top: 35px;
-}
-
-.navbar {
-left:12px;
 }
 
 }
