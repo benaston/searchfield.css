@@ -1367,17 +1367,19 @@ width:215px;
 .an-employer {
 top: 120px;
 position: relative;
+display: block;
+left:0;
 }
 
 #btn-it-contractor {
 position: relative;
-left: 70px !important;
-top: -105px !important;
+left: 78px !important;
+top: -3px !important;
 }
 
 #btn-employer {
-left: 70px;
-top: 39px;
+left: -17px;
+top: 140px;
 }
 
 }
