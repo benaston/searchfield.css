@@ -2,6 +2,7 @@
 
 .an-it-contractor, .an-employer{
 display:inline-block;
+position:relative;
 }
 
 .an-it-contractor {
@@ -20,10 +21,10 @@ min-width: 260px;
 }
 
 .welcome-panel #btn-it-contractor , #btn-employer{
-position: relative;
+position: absolute;
 float: none !important;
-left: -294px;
-top: 67px;
+left: 30px;
+top: 38px;
 display:inline-block;
 }
 
@@ -69,7 +70,7 @@ display:none;
 }
 
 #btn-employer {
-left: -175px;
+left: 19px;
 }
 
 #btn-it-contractor:after, 
@@ -1247,6 +1248,10 @@ bottom:5px;
 
 @media only screen and (max-width: 480px) {
 
+}
+
+@media only screen and (max-width: 400px) {
+
 #btn-search {
 left: 86px;
 top: 231px;
@@ -1374,12 +1379,12 @@ left:0;
 #btn-it-contractor {
 position: relative;
 left: 78px !important;
-top: -3px !important;
+top: 35px !important;
 }
 
 #btn-employer {
-left: -17px;
-top: 140px;
+left: 78px;
+top: 35px;
 }
 
 .navbar {

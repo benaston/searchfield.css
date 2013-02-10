@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
 		$('.welcome-panel').removeClass('flipped');
 	});
 	
-	$('.back-to-top').bind('click', function(){$('.result-details').scrollTop(0); return false;});
+	$('.back-to-top').bind('click', function(){$('.result-details').scrollTop(0); return false;});	
 	
 	$('body').bind('ontouchmove', function(event){
     event.preventDefault();
