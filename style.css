@@ -5,11 +5,42 @@ display:inline-block;
 position:relative;
 }
 
+.result.selected:after {
+content:'';
+display:block;
+width:25px;
+height:25px;
+border-top: 2px solid #333;
+border-left: 2px solid #333;
+border-radius: 25px 0 0 0;
+position: absolute;
+top:-10px;
+left:-10px;
+z-index:999;
+}
+
+.result.selected:before {
+content:'';
+display:block;
+width:25px;
+height:25px;
+border-bottom: 2px solid #333;
+border-right: 2px solid #333;
+border-radius: 0 0 25px 0;
+position: absolute;
+bottom:-10px;
+right:-10px;
+z-index:999;
+}
+
 .result {
 box-sizing:border-box;
-padding: 18px;
 font-size:.85em;
 position:relative;
+}
+
+.result.textual {
+padding: 18px;
 }
 
 .favourites .result {
