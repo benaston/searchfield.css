@@ -5,6 +5,43 @@ display:inline-block;
 position:relative;
 }
 
+.result {
+box-sizing:border-box;
+padding:20px;
+font-size:.85em;
+position:relative;
+}
+
+.favourites .result {
+font-size:.45em;
+padding:5px;
+}
+
+.favourites .result p {
+margin-top:0;
+margin-bottom:0;
+}
+
+.result  h2{
+font-size:1em;
+margin-top:.5em;
+margin-bottom:.5em;
+line-height:1em;
+}
+
+.result p {
+margin-top:.5em;
+margin-bottom:.5em;
+}
+
+.result .posted {
+font-style:italic;
+color:#999;
+position:absolute;
+bottom:0;
+right:10px;
+}
+
 .an-it-contractor {
 }
 
@@ -23,7 +60,7 @@ min-width: 260px;
 .welcome-panel #btn-it-contractor , #btn-employer{
 position: absolute;
 float: none !important;
-left: 30px;
+left: 7px;
 top: 38px;
 display:inline-block;
 }
@@ -70,7 +107,7 @@ display:none;
 }
 
 #btn-employer {
-left: 19px;
+left: -8px;
 }
 
 #btn-it-contractor:after, 
