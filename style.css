@@ -1,15 +1,30 @@
 @media screen {
 
+.an-it-contractor, .an-employer{
+display:inline-block;
+}
+
+.an-it-contractor {
+}
+
+.an-employer {
+position:relative;
+left:50px;
+}
+
 .welcome-panel{
 margin: 30px;
 max-width: 573px;
 position: relative;
 min-width: 260px;
 }
+
 .welcome-panel #btn-it-contractor , #btn-employer{
-position: absolute;
-float:none !important;
-left: 34px;
+position: relative;
+float: none !important;
+left: -294px;
+top: 67px;
+display:inline-block;
 }
 
 .welcome:hover,.back-to-welcome:hover{
@@ -54,7 +69,7 @@ display:none;
 }
 
 #btn-employer {
-left: 183px;
+left: -175px;
 }
 
 #btn-it-contractor:after, 
