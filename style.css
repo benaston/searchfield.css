@@ -20,6 +20,7 @@ padding:5px;
 .favourites .result p {
 margin-top:0;
 margin-bottom:0;
+line-height: 1.6em;
 }
 
 .result  h2{
@@ -32,6 +33,11 @@ line-height:1em;
 .result p {
 margin-top:.5em;
 margin-bottom:.5em;
+}
+
+.favourites .result .posted {
+bottom:5px;
+right:10px;
 }
 
 .result .posted {
