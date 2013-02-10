@@ -1369,9 +1369,17 @@ width:215px;
 left:12px;
 }
 
+h1 {
+line-height:15px;
+}
+
 }
 
 @media only screen and (max-width: 400px) {
+
+h1 {
+line-height:40px;
+}
 
 .welcome-panel {
 margin: 7px 30px;
