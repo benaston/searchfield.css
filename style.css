@@ -7,7 +7,7 @@ position:relative;
 
 .result {
 box-sizing:border-box;
-padding:20px;
+padding: 18px;
 font-size:.85em;
 position:relative;
 }
@@ -24,7 +24,7 @@ margin-bottom:0;
 
 .result  h2{
 font-size:1em;
-margin-top:.5em;
+margin-top:0;
 margin-bottom:.5em;
 line-height:1em;
 }
