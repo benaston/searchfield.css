@@ -1270,7 +1270,7 @@ width: 250px !important;
 -webkit-overflow-scrolling: touch;
 }
 
-.navbar , .legal {
+.legal {
 display:none;
 }
 
@@ -1380,6 +1380,14 @@ top: -3px !important;
 #btn-employer {
 left: -17px;
 top: 140px;
+}
+
+.my-favourites {
+top: 90px;
+}
+
+.navbar {
+left:12px;
 }
 
 }
