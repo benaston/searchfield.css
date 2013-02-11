@@ -7,7 +7,11 @@ position:relative;
 
 .result.selected {
 z-index:999;
--webkit-transition: all 1s linear 0s;
+}
+
+.result.selected:after {
+top: -3px;
+left: -3px;
 }
 
 .result.selected:after {
@@ -23,6 +27,11 @@ top: -4px;
 left: -4px;
 z-index: 999;
 box-shadow: -1px -3px 0px 0px #333;
+}
+
+.favourites .result.selected:before {
+bottom: -3px;
+right: -3px;
 }
 
 .result.selected:before {
@@ -576,10 +585,10 @@ opacity:1 !important;
 border: 2px solid black;
 }
 
-.my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:before {
-background-color: rgba(0,0,0,.9);
+.my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result::before {
+background-color: rgba(0,0,0,1);
 border-radius: 41px;
-box-shadow: 1px 1px 10px 0px #333;
+box-shadow: 0px 0px 0 0px #333;
 content: "";
 color: #fff;
 display: inline-block;
@@ -587,15 +596,11 @@ font-size: 20px;
 position: relative;
 left: 47%;
 top: -52%;
-width: 4px;
+width: 2px;
 height: 113px;
 line-height: 41px;
 text-align: center;
 -webkit-transform: rotate(45deg);
-}
-
-.my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:hover:before {
-box-shadow: 1px 1px 10px 0px red;
 }
 
 .mac .my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:before {
@@ -1029,6 +1034,10 @@ top:20px;
 list-style:none;
 }
 
+.is-favourite .btn-favourite {
+color:rgba(238, 220, 130,1);/*rgba(255,215,10,1);*//*gold*/
+}
+
 .result:focus {
 outline: 5px auto -webkit-focus-ring-color;
 outline-offset: -2px;
@@ -1043,6 +1052,19 @@ box-shadow: 0 1px rgba(255,255,255,0.3) inset,0 10px 20px rgba(255,255,255,0.25)
 .result:hover {
 text-decoration: none;
 box-shadow: 0 1px rgba(255,255,255,0.3) inset,0 10px 20px rgba(255,255,255,0.25) inset, 0 0 0 2px rgba(255, 255, 0, 0.3) inset;
+}
+
+
+.my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:hover {
+box-shadow: 0 1px rgba(255,255,255,0.3) inset,0 10px 20px rgba(255,255,255,0.25) inset, 0 0 0 2px rgba(255, 0, 0, 0.3) inset;
+}
+
+.my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:active {
+box-shadow: 0 1px rgba(255,255,255,0.3) inset,0 10px 20px rgba(255,255,255,0.25) inset, 0 0 0 2px rgba(255, 0, 0, 0.8) inset !important;
+}
+
+.my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:focus {
+box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.8) inset !important;
 }
 
 .mac .circular-btn {
