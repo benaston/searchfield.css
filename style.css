@@ -566,11 +566,17 @@ z-index:-1;
 .my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:after {
 content:none !important;
 }
+
 .my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result{
 opacity:1 !important;
 }
+
+.my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:before:hover{
+border: 2px solid black;
+}
+
 .my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:before {
-background-color: rgba(0,0,0,0.8);
+background-color: rgba(0,0,0,1);
 border: 2px solid silver;
 border-radius: 16px;
 box-shadow: 0 0 3px #333;
@@ -587,7 +593,7 @@ line-height: 17px;
 text-align: center;
 }
 
-.mac .my-favourites #fav:checked ~ .favourites .result:before {
+.mac .my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:before {
 line-height: 20px;
 }
 
