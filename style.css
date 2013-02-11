@@ -7,6 +7,7 @@ position:relative;
 
 .result.selected {
 z-index:999;
+-webkit-transition: all 1s linear 0s;
 }
 
 .result.selected:after {
@@ -16,10 +17,10 @@ width: 56px;
 height: 56px;
 border-top: 0;
 border-left: 0;
-border-radius: 25px 0 0 0;
+border-radius: 11px 0 0 0;
 position: absolute;
-top: -10px;
-left: -10px;
+top: -4px;
+left: -4px;
 z-index: 999;
 box-shadow: -1px -3px 0px 0px #333;
 }
@@ -31,10 +32,10 @@ width: 56px;
 height: 56px;
 border-bottom: 0;
 border-right: 0;
-border-radius: 0 0 25px 0;
+border-radius: 0 0 11px 0;
 position: absolute;
-bottom: -10px;
-right: -10px;
+bottom: -4px;
+right: -4px;
 z-index: 999;
 box-shadow: 1px 3px 0px 0px #333;
 }
@@ -546,7 +547,7 @@ text-align:left;
 }
 
 .my-favourites .result {
-z-index:-1;
+cursor:pointer;
 }
 
 .my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:nth-child(odd) {
@@ -576,21 +577,25 @@ border: 2px solid black;
 }
 
 .my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:before {
-background-color: rgba(0,0,0,1);
-border: 2px solid silver;
-border-radius: 16px;
-box-shadow: 0 0 3px #333;
-content: "x";
+background-color: rgba(0,0,0,.9);
+border-radius: 41px;
+box-shadow: 1px 1px 10px 0px #333;
+content: "";
 color: #fff;
 display: inline-block;
 font-size: 20px;
 position: relative;
-left: -15%;
-top: -15px;
-width: 20px;
-height: 20px;
-line-height: 17px;
+left: 47%;
+top: -52%;
+width: 4px;
+height: 113px;
+line-height: 41px;
 text-align: center;
+-webkit-transform: rotate(45deg);
+}
+
+.my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:hover:before {
+box-shadow: 1px 1px 10px 0px red;
 }
 
 .mac .my-favourites #fav:checked ~ .favourites .hover:not(.favourite-placeholder) .result:before {
